@@ -1,0 +1,19 @@
+{
+  "name": "jocson_b12portfolio",
+  "version": "1.0.0",
+  "description": "bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "patrickjocson",
+  "license": "ISC",
+  "dependencies": {
+    "@material-icons/svg": "^1.0.30",
+    "aos": "^3.0.0-beta.6",
+    "bootstrap": "^5.1.3",
+    "font-awesome": "^4.7.0",
+    "material-icons": "^1.11.4",
+    "typed.js": "^2.0.12"
+  }
+}
