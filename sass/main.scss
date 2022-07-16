@@ -2,15 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300&family=Roboto+Slab:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800;900&display=swap');
-:root {
---bs-slime: #baff39;
-}
 *{
     box-sizing: border-box;
     padding: 0;
     margin-top: 0;
 }
-
 html {
   scroll-behavior: smooth;
 }
@@ -18,48 +14,18 @@ h1 {
   font-family: 'Roboto Slab', sans-serif;
   padding-bottom: 40px;
 }
-/*--------------------------------------------------------------
-# header
---------------------------------------------------------------*/
-header{
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-display: flex;
-justify-content: space-between;
-align-items: center;
-transition: 0.6s;
-padding: 40px 100px;
+/*--------------------------------------------
+------------ Text Section --------------------
+--------------------------------------------*/
+p h6 {
+  font-family: 'Poppins', sans-serif;
 }
-header .logo {
-position: relative;
-font-weight: 700;
-color: #fff;
-text-decoration: none;
-font-size: 2em;
+p {
+ margin-bottom: 3rem;
 }
-header ul {
-  position: relative;
-display: flex;
-justify-content: center;
-align-items: center;
+span {
+  font-size: 10vh;
 }
-header ul li {
-  position: relative;
-  list-style: none;
-}
-header ul li a {
-  position: relative;
-  margin: 0 15px;
-  text-decoration: none;
-  color: #fff;
-  letter-spacing: 2px;
-  font-weight: 500px;
-  transition: 0.5s;
-}
-
-
 /*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
@@ -67,77 +33,90 @@ section {
   padding: 50px 0;
   overflow: hidden;
 }
-
-.portfolio-title {
-  text-align: center;
-}
-
 /* -----------------------------
 -------Hero Section style-------
 ------------------------------*/
-.banner-image {
+.banner-layer {
   background-size: cover;
   background-position: center;
   position: relative;
-  min-height: 100vh;
+  // background-color: rgb(241, 240, 240);
   width: 100%;
+  height: auto;
+}
+@media (max-width: 1000px) {
+  .banner-left {
+    margin-top: 100px;
+  }
 }
 @media (max-width: 768px) {
-  .banner-image {
-    min-height: 30vh;
-  }
-  .txt {
-      font-size: 80px;
+  span {
+      font-size: 50px;
   }
 }
-@media (max-width: 600px) {
-  .banner-image {
-    min-height: 10px;
-  }
-  .txt {
-      font-size: 60px;
-  }
-} 
-.banner-text {
-  font-family: 'Baloo 2', cursive;
-  font-size: 75px;
-  font-weight: 800;
-}
-.banner-container > .txt{
-  color: black;
+.banner-container > span{
+  color: rgb(0, 0, 0);
   animation: glow 2s ease-in-out infinite;
 }
 @keyframes glow {
   0%, 100%{
-    color: rgb(0, 0, 0);
-    text-shadow: 0 0 12px var(--bs-slime), 0 0 50px var(--bs-slime), 0 0 100px var(--bs-slime);
+    color: rgb(22, 160, 179);
+    text-shadow: 0 0 12px rgb(34, 225, 250), 0 0 50px rgb(34, 225, 250), 0 0 100px rgb(34, 225, 250);
   }
   10%, 90% {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-shadow: none;
   }
 }
-.banner-container > .txt:nth-child(2) {
+.banner-container > span:nth-child(2) {
   animation-delay: 0.25s;
 }
-.banner-container > .txt:nth-child(3) {
+.banner-container > span:nth-child(3) {
   animation-delay: 0.5s;
 }
-.banner-container > .txt:nth-child(4) {
+.banner-container > span:nth-child(4) {
   animation-delay: 0.75s;
 }
-.banner-container > .txt:nth-child(5) {
+.banner-container > span:nth-child(5) {
   animation-delay: 1s;
 }
-.banner-container > .txt:nth-child(6) {
+.banner-container > span:nth-child(6) {
   animation-delay: 1.25s;
 }
-.banner-container > .txt:nth-child(7) {
+.banner-container > span:nth-child(7) {
   animation-delay: 1.50s;
 }
+.imgbanner {
+  border: 15px solid rgb(22, 160, 179);
+}
+         
+.primary-btn {
+  background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%);
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  color: #000;            
+  box-shadow: 13 12 20px #eee;
+  border-radius: 10px;
+  text-decoration: none;
+  }
+
+.primary-btn:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+         
 /* -------------------------------
 -------Portfolio Section Style----
 ----------------------------------*/
+main {
+background-color: rgb(238, 238, 238);
+}
+.portfolio-title {
+  text-align: center;
+}
 .portfolio-img {
   text-align: center;
 }
@@ -145,9 +124,10 @@ section {
   margin-bottom: 20px;
 }
 .portfolio-items .portfolio-item {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  padding: 30px;
+  font-family: 'Poppins', sans-serif;
   transition: all ease-in-out 0.4s;
+  border-radius: 5px;
+  padding: 30px;
   height: 95%;
 }
 .portfolio-items .portfolio-item h4 {
@@ -168,5 +148,5 @@ section {
   box-shadow: 5px 15px 20px 5px var(--bs-gray-300);
 }
 .portfolio-items .portfolio-item:hover h4 a {
-  color: rgb(40, 187, 77);
+  color: rgb(85, 182, 238);
 }
