@@ -13,15 +13,25 @@
 <body>
 
     <!-- ======= Header ======= -->
-    <header>
-      <a href="#" class="logo">Logo</a>
-      <ul>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">PORTFOLIO</a></li>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">CONTACT</a></li>
-      </ul>
-    </header>
+
+      <nav class="navbar navbar-expand-lg vh-75 fixed-top navbar-dark bg-dark">
+        <div class="container">
+          <div class="brand-logo">
+            <a href="#" class="navbar-brand">PATRICK</a>
+          </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMenuIcon" aria-controls="toggleMenuIcon" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse justify-content-end" id="toggleMenuIcon">
+            <ul class="nav navbar-nav menul text-center mb-lg-0 justify-content-end">
+              <li class="nav-item"><a class="nav-link scrollto" href="#hero">HOME</a></li>
+              <li class="nav-item"><a class="nav-link scrollto" href="#portfolio-items">PORTFOLIO</a></li>
+              <li class="nav-item"><a class="nav-link scrollto" href="#about">ABOUT</a></li>
+              <li class="nav-item"><a class="nav-link scrollto" href="#contact">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
       <!-- <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
           <div class="container">
@@ -47,7 +57,7 @@
     <div class="banner-image">
         <div class="banner-content my-auto vh-100 d-flex justify-content-center align-items-center text-center">
           <h1 class="banner-text">
-            <!-- <span class="auto-type"></span> -->
+            <span class="auto-type"></span>
             <div class="banner-container">
               <span>W</span>
               <span>E</span>
@@ -69,14 +79,13 @@
     <section id="portfolio-items" class="portfolio-items">
       <div class="container">
 
-        <div class="section-header">
+        <div class="section-header" data-aos="fade-down" data-aos-delay="200">
             <h1>PORTFOLIO</h1>
         </div>
 
         <div class="row gy-4">
 
-
-          <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-down-right">
+          <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-down-right" data-aos-delay="200">
             <div class="portfolio-item position-relative">
               <div class="portfolio-img"><img src="img/portfolio1.png" width="100px" alt=""></div>
               <h4><a href="https://google.com" target="_blank" class="stretched-link">SIMPLE WEBSITE</a></h4>
