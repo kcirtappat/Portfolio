@@ -76,24 +76,33 @@ section {
 -------Hero Section style-------
 ------------------------------*/
 .banner-image {
-  width: 100%;
-  background-image: url('/img/heroimg.jpg');
-  background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  min-height: 100vh;
 }
-.banner-content {
-  color: #ffffff;
+@media (max-width: 768px) {
+  .banner-image {
+    min-height: 30vh;
+  }
+  .txt {
+      font-size: 80px;
+  }
 }
+@media (max-width: 600px) {
+  .banner-image {
+    min-height: 10px;
+  }
+  .txt {
+      font-size: 60px;
+  }
+} 
 .banner-text {
   font-family: 'Baloo 2', cursive;
   font-size: 75px;
   font-weight: 800;
 }
-// .auto-type {
-//   color: var(--bs-color1) !important;
-// }
-.banner-container > span{
+.banner-container > .txt{
   color: black;
   animation: glow 2s ease-in-out infinite;
 }
@@ -103,26 +112,26 @@ section {
     text-shadow: 0 0 12px var(--bs-slime), 0 0 50px var(--bs-slime), 0 0 100px var(--bs-slime);
   }
   10%, 90% {
-    color: rgb(77, 77, 77);
+    color: rgb(255, 255, 255);
     text-shadow: none;
   }
 }
-.banner-container > span:nth-child(2) {
+.banner-container > .txt:nth-child(2) {
   animation-delay: 0.25s;
 }
-.banner-container > span:nth-child(3) {
+.banner-container > .txt:nth-child(3) {
   animation-delay: 0.5s;
 }
-.banner-container > span:nth-child(4) {
+.banner-container > .txt:nth-child(4) {
   animation-delay: 0.75s;
 }
-.banner-container > span:nth-child(5) {
+.banner-container > .txt:nth-child(5) {
   animation-delay: 1s;
 }
-.banner-container > span:nth-child(6) {
+.banner-container > .txt:nth-child(6) {
   animation-delay: 1.25s;
 }
-.banner-container > span:nth-child(7) {
+.banner-container > .txt:nth-child(7) {
   animation-delay: 1.50s;
 }
 /* -------------------------------
