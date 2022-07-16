@@ -68,7 +68,7 @@ section {
   overflow: hidden;
 }
 
-.section-header {
+.portfolio-title {
   text-align: center;
 }
 
@@ -80,6 +80,7 @@ section {
   background-position: center;
   position: relative;
   min-height: 100vh;
+  width: 100%;
 }
 @media (max-width: 768px) {
   .banner-image {
