@@ -8,15 +8,15 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/main.min.css">
   <!-- <link rel="stylesheet" href="node_modules/font-awesome/css2/all.css"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- AOS -->
   <link rel="stylesheet" href="css/aos.css">
 </head>
 
 <body>
 
-  <!-- ======= Header ======= -->
-
-  <nav class="navbar navbar-expand-lg vh-75 fixed-top navbar-light bg-light">
+  <!-- ======= Navbar ======= -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
     <div class="container">
       <div class="brand-logo">
         <a href="#" class="navbar-brand">PATRICK</a>
@@ -27,7 +27,7 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="toggleMenuIcon">
         <ul class="nav navbar-nav menul text-center mb-lg-0 justify-content-end">
-          <li class="nav-item"><a class="nav-link scrollto" href="#hero">HOME</a></li>
+          <li class="nav-item"><a class="nav-link scrollto" href="#header">HOME</a></li>
           <li class="nav-item"><a class="nav-link scrollto" href="#portfolio-items">PORTFOLIO</a></li>
           <li class="nav-item"><a class="nav-link scrollto" href="#about">ABOUT</a></li>
           <li class="nav-item"><a class="nav-link scrollto" href="#contact">CONTACT</a></li>
@@ -35,12 +35,13 @@
       </div>
     </div>
   </nav>
+  <!-- ====== Main Content ======-->
+  <main id="main">
 
-  <!-- Hero-Image Banner Section -->
-  <section id="hero" class="hero">
-    <div class="banner-layer">
-      <div class="banner-content">
-        <div class="container">
+  <!-- ====== Header ======-->
+  <section id="header" class="header">
+      <div class="banner-content mt-5">
+        <div class="container" data-aos="fade-right" data-aos-delay="200">
           <div class="row d-flex align-items-center justify-content-between">
             <div class="col-lg-6 colmd-6 banner-left ps-5">
               <h6>THIS IS ME</h6>
@@ -59,19 +60,16 @@
                 learned</p>
               <a href="#" class="primary-btn text-uppercase mt-5">Discover more</a>
             </div>
-            <div class="col-lg-6 colmd-6 banner-right ps-5 mt-5">
-              <img class="imgbanner img-fluid" width="400px" src="img/Mee.jpg" alt="">
+            <div class="col-lg-6 colmd-6 banner-right ps-5 mt-5" data-aos="fade-left" data-aos-delay="200">
+              <img class="imgbanner img-fluid" width="400px" src="img/headerimg.jpg" alt="">
             </div>
           </div>
         </div>
       </div>
-    </div>
   </section>
 
-  <main id="main">
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio-items" class="portfolio-items">
+  <!-- ======= Portfolio Section ======= -->
+  <section id="portfolio-items" class="portfolio-items">
       <div class="container bgcolor">
 
         <div class="portfolio-title" data-aos="fade-down" data-aos-delay="200">
@@ -131,7 +129,59 @@
         </div>
 
       </div>
-    </section>
+  </section>
+
+  <!-- ======= Contact Section ======= -->
+    <div id="contact" class="contact" style="background-image: url('img/contactimg.jpg');">
+        <div class="container">
+            <div class="row">
+                <div class="contactdeet col-lg-12">
+                    <h1 class="h1-heading text-uppercase text-dark">Contact details</h1>
+                    <p class="p-heading text-dark">Of will at sell well at as. Too want but tall nay like old removing yourself today</p>
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="text-dark"><i class="fas fa-map-marker-alt"></i> &nbsp;11 Bonifacio Street Brgy. Poblacion, Magdalena Laguna&nbsp;</li>
+                        <li><i class="fas fa-phone"></i> &nbsp;<a href="tel:09217967957" class="text-dark">+63 921 7967 957&nbsp;</a></li>
+                        <li><i class="fas fa-envelope"></i> &nbsp;<a href="mailto:noscoj.pat@gmail.com" class="text-dark">noscoj.pat@gmail.com</a></li>
+                    </ul>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <!-- Contact Form -->
+                    <form class="#">
+                      <div class="row two">
+
+                      <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="fullname">Fullname:</label>
+                            <input type="text" class="form-control " placeholder="Name" required>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" placeholder="Email" required>
+                        </div>
+                      </div>
+                        <div class="form-group mt-3">
+                          <label for="comment">Message:</label>
+                          <textarea class="form-control" rows="5" id="comment" placeholder="" required></textarea>
+                        </div>  
+                      <div class="col-md-6 mt-3">
+                        <div class="form-group">
+                            <button type="submit" class="btn primary-btn text-uppercase">Submit</button>
+                        </div>
+                      </div>
+
+                      </div>
+                    </form>
+                    <!-- End of contact form -->
+
+                </div> <!-- End of col -->
+            </div> <!-- End of row -->
+        </div> <!-- End of container -->
+    </div> <!-- End of Contact-->
+
   </main>
 
   <script src="js/main.js"></script>
