@@ -8,25 +8,31 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/main.min.css">
   <!-- <link rel="stylesheet" href="node_modules/font-awesome/css2/all.css"> -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- AOS -->
   <link rel="stylesheet" href="css/aos.css">
 </head>
 
-<body>
+<body
+    data-bs-spy="scroll"
+    data-bs-target="#mainNav"
+    data-bs-smooth-scroll="true"
+    data-bs-offset="100"
+>
+
 
   <!-- ======= Navbar ======= -->
-  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
     <div class="container">
       <div class="brand-logo">
-        <a href="#" class="navbar-brand">PATRICK</a>
+        <a href="#" class="navbar-brand">MY PORTFOLIO</a>
       </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMenuIcon"
         aria-controls="toggleMenuIcon" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="toggleMenuIcon">
-        <ul class="nav navbar-nav menul text-center mb-lg-0 justify-content-end">
+        <ul class="nav navbar-nav text-center mb-lg-0 justify-content-end">
           <li class="nav-item"><a class="nav-link scrollto" href="#header">HOME</a></li>
           <li class="nav-item"><a class="nav-link scrollto" href="#portfolio-items">PORTFOLIO</a></li>
           <li class="nav-item"><a class="nav-link scrollto" href="#about">ABOUT</a></li>
@@ -35,15 +41,15 @@
       </div>
     </div>
   </nav>
-  <!-- ====== Main Content ======-->
-  <main id="main">
+  <!-- ======= MAIN CONTENT ======= -->
+  <main id="main-content">
 
   <!-- ====== Header ======-->
   <section id="header" class="header">
-      <div class="banner-content mt-5">
-        <div class="container" data-aos="fade-right" data-aos-delay="200">
+      <div class="banner-content mt-4">
+        <div class="container container-header" data-aos="fade-right" data-aos-delay="200">
           <div class="row d-flex align-items-center justify-content-between">
-            <div class="col-lg-6 colmd-6 banner-left ps-5">
+            <div class="col-lg-6 colmd-6 banner-left p-auto">
               <h6>THIS IS ME</h6>
               <h1>
                 <div class="banner-container">
@@ -58,10 +64,10 @@
               </h1>
               <p>Welcome to my personal portfolio, I just wanna share my simple projects and some cool stuff I have
                 learned</p>
-              <a href="#" class="primary-btn text-uppercase mt-5">Discover more</a>
+              <a href="#" class="primary-btn text-uppercase mt-5">HIRE ME</a>
             </div>
-            <div class="col-lg-6 colmd-6 banner-right ps-5 mt-5" data-aos="fade-left" data-aos-delay="200">
-              <img class="imgbanner img-fluid" width="400px" src="img/headerimg.jpg" alt="">
+            <div class="col-lg-6 col-md-6 banner-right ps-5 mt-5" data-aos="fade-left" data-aos-delay="200">
+              <img class="imgbanner img-fluid" width="400px" src="img/profilepic.jpg" alt="">
             </div>
           </div>
         </div>
@@ -70,15 +76,15 @@
 
   <!-- ======= Portfolio Section ======= -->
   <section id="portfolio-items" class="portfolio-items">
-      <div class="container bgcolor">
+      <div class="container">
 
         <div class="portfolio-title" data-aos="fade-down" data-aos-delay="200">
           <h1>PORTFOLIO</h1>
         </div>
 
-        <div class="row gy-4">
+        <div class="row">
 
-          <div class="col-xl-4 col-md-4 d-flex" data-aos="fade-right" data-aos-delay="200">
+          <div class="col-md-4 d-flex" data-aos="fade-right" data-aos-delay="250">
             <div class="portfolio-item position-relative">
               <div class="portfolio-img"><img src="img/portfolio1.png" width="100px" alt=""></div>
               <h4><a href="https://google.com" target="_blank" class="stretched-link">SIMPLE WEBSITE</a></h4>
@@ -86,7 +92,7 @@
             </div>
           </div><!-- End Portfolio Item -->
 
-          <div class="col-xl-4 col-md-4 d-flex" data-aos="fade-down" data-aos-delay="200">
+          <div class="col-md-4 d-flex" data-aos="fade-down" data-aos-delay="300">
             <div class="portfolio-item position-relative">
               <div class="portfolio-img"><img src="img/portfolio2.png" width="100px" alt=""></div>
               <h4><a href="https://google.com" target="_blank" class="stretched-link">ROCK PAPER SCISSORS</a></h4>
@@ -94,7 +100,7 @@
             </div>
           </div><!-- End Portfolio Item -->
 
-          <div class="col-xl-4 col-md-4 d-flex" data-aos="fade-right" data-aos-delay="400">
+          <div class="col-md-4 d-flex" data-aos="fade-right" data-aos-delay="350">
             <div class="portfolio-item position-relative">
               <div class="portfolio-img"><img src="img/portfolio3.png" width="100px" alt=""></div>
               <h4><a href="https://google.com" target="_blank" class="stretched-link">MINI PROJECT</a></h4>
@@ -102,7 +108,7 @@
             </div>
           </div><!-- End Portfolio Item -->
 
-          <div class="col-xl-4 col-md-4 d-flex" data-aos="fade-down" data-aos-delay="600">
+          <div class="col-md-4 d-flex" data-aos="fade-down" data-aos-delay="400">
             <div class="portfolio-item position-relative">
               <div class="portfolio-img"><img src="img/portfolio3.png" width="100px" alt=""></div>
               <h4><a href="https://google.com" target="_blank" class="stretched-link">MINI PROJECT 1</a></h4>
@@ -110,7 +116,7 @@
             </div>
           </div><!-- End Portfolio Item -->
 
-          <div class="col-xl-4 col-md-4 d-flex" data-aos="fade-right" data-aos-delay="800">
+          <div class="col-md-4 d-flex" data-aos="fade-right" data-aos-delay="450">
             <div class="portfolio-item position-relative">
               <div class="portfolio-img"><img src="img/portfolio3.png" width="100px" alt=""></div>
               <h4><a href="https://google.com" target="_blank" class="stretched-link">MINI PROJECT 1</a></h4>
@@ -118,7 +124,7 @@
             </div>
           </div><!-- End Portfolio Item -->
 
-          <div class="col-xl-4 col-md-4 d-flex" data-aos="fade-down" data-aos-delay="1000">
+          <div class="col-md-4 d-flex" data-aos="fade-down" data-aos-delay="500">
             <div class="portfolio-item position-relative">
               <div class="portfolio-img"><img src="img/portfolio3.png" width="100px" alt=""></div>
               <h4><a href="https://google.com" target="_blank" class="stretched-link">MINI PROJECT 1</a></h4>
@@ -131,11 +137,20 @@
       </div>
   </section>
 
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="row">
+
+      </div>
+    </div>
+  </section>
+
   <!-- ======= Contact Section ======= -->
-    <div id="contact" class="contact" style="background-image: url('img/contactimg.jpg');">
+  <section id="contact" class="contact" style="background-image: url('img/contactimg.jpg');">
         <div class="container">
             <div class="row">
-                <div class="contactdeet col-lg-12">
+                <div class="contactdeet col-lg-12" data-aos="zoom-in" data-aos-delay="200">
                     <h1 class="h1-heading text-uppercase text-dark">Contact details</h1>
                     <p class="p-heading text-dark">Of will at sell well at as. Too want but tall nay like old removing yourself today</p>
                     <ul class="list-unstyled li-space-lg">
@@ -146,14 +161,14 @@
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
-                <div class="col-lg-10 offset-lg-1">
+                <div class="col-lg-10 offset-lg-1" data-aos="fade-down" data-aos-delay="200">
                     <!-- Contact Form -->
                     <form class="#">
                       <div class="row two">
 
                       <div class="col-md-6">
                         <div class="form-group">
-                            <label for="fullname">Fullname:</label>
+                            <label for="name">Name:</label>
                             <input type="text" class="form-control " placeholder="Name" required>
                         </div>
                       </div>
@@ -179,10 +194,10 @@
 
                 </div> <!-- End of col -->
             </div> <!-- End of row -->
-        </div> <!-- End of container -->
-    </div> <!-- End of Contact-->
+        </div> <!-- End of Contact-->
+  </section>
 
-  </main>
+  </main> <!--====== END OF MAIN CONTENT ======-->
 
   <script src="js/main.js"></script>
   <script src="js/aos.js"></script>
