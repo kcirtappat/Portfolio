@@ -83,26 +83,51 @@ section {
 /*******************/
 /*     Navbar     */
 /*******************/
-// .nav-item {
-//     font-weight: 800;
-// }
 .nav-item .active {
     color: var(--color-1) !important;
     background-color: #3d3d3d ;
     transition: 0.5s;
+}
+.nav-link {
+    color: white !important;
 }
 .nav-link:hover {
     color: var(--color-1) !important;
     background-color: #3d3d3d;
     transition: 0.4s;
 }
-.navbar {
-    background-color: #04a126;
-    box-shadow: 0 0 15px 6px rgba(0, 0, 0, 0.3);
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: none;
+    background-color: transparent;
+    transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+  }
+  #mainNav .navbar-brand {
+    // font-size: 1.5em;
+    transition: font-size 0.3s ease-in-out;
+  }
+  #mainNav .navbar-brand img {
+    height: 1rem;
+    transition: height 0.3s ease-in-out;
+  }
+  #mainNav.navbar-shrink {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #212529;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    font-size: 1rem;
+  }
+  #mainNav .navbar-nav .nav-item {
+    margin-right: 1rem;
+  }
 }
-.fixed-top {
-    background-color: black;
-}
+
+
+
 
 /*****************/
 /*    Header     */
@@ -175,7 +200,7 @@ section {
     margin-bottom: 20px;
 }
 .portfolio-items .portfolio-item {
-    background-color: rgb(61, 61, 61);
+    background-color: rgb(83, 83, 83);
     font-family: 'Poppins', sans-serif;
     transition: all ease-in-out 0.4s;
     color: white;
