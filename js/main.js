@@ -20,15 +20,4 @@ window.addEventListener("DOMContentLoaded", (event) => {
 });
 
 
-// var nav = document.querySelector('nav');
-
-// window.addEventListener('scroll',() => {
-//     if(window.pageYOffset > 50){
-//         nav.classList.add('bg-dark');
-//     } else {
-//         nav.classList.remove('bg-dark');
-//     }
-// })
-
-
 
