@@ -113,7 +113,7 @@ section {
     // font-size: 1.5em;
     transition: font-size 0.3s ease-in-out;
   }
-  #mainNav .navbar-brand img {
+  #mainNav .navbar-brand .imgbanner {
     height: 1rem;
     transition: height 0.3s ease-in-out;
   }
@@ -187,6 +187,20 @@ section {
 }
 .banner-container > span:nth-child(7) {
     animation-delay: 1.50s;
+}
+
+/* -------------------------------
+------- About Section Style-------
+----------------------------------*/
+// .about {
+//     // font-family: 'Lato', sans-serif;
+// }
+.about-text p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+.h2-heading {
+    font-weight: bold;
 }
 
 
