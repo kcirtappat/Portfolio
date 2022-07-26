@@ -195,6 +195,16 @@ section {
     font-family: 'Poppins', serif;
     font-weight: bold;
 }
+.resume-section-content {
+    font-family: 'Poppins', sans-serif;
+}
+.flex-shrink-0 span {
+  font-size: 1rem;
+}
+.fab {
+    font-size: 3rem;
+    color: #585858;
+}
 
 
 /* -------------------------------
@@ -304,7 +314,7 @@ section {
 }
 .fa-brands {
     color: #eee;
-    font-size: 25px;
+    font-size: 2rem;
 }
 .fa-brands:hover {
     transition: 1s;
@@ -323,4 +333,7 @@ section {
 }
 .footer .copyright {
   color: #999999;
+}
+.list-unstyled li a {
+    margin: 0 1rem;
 }

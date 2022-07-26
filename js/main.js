@@ -19,5 +19,3 @@ window.addEventListener("DOMContentLoaded", (event) => {
   document.addEventListener("scroll", navbarShrink);
 });
 
-
-
